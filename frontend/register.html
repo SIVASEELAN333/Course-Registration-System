@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register a Course</title>
+    <style>
+        body {
+            background-color: black;
+            text-align: center;
+        }
+
+        form {
+            margin: auto;
+            padding: 20px;
+            width: 400px;
+            background-color: #fff;
+        }
+
+        input, select, button {
+            width: 90%;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            font-size: medium;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #104212;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: yellow;">Kickstart with an Exciting Course</h1>
+    <form action="http://localhost:8080/courses/register" method="post">
+        <label for="name">Enter your name:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label for="emailId">Enter your emailId:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label for="courseName">Choose a Course</label><br>
+        <select name="courseName" required>
+            <option value="Computer Science">Computer Science</option>
+            <option value="ML">ML</option>
+            <option value="AI">AI</option>
+        </select><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
